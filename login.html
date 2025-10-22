@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Page</title>
+   <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    .container{
+        height: 400px;
+    }
+
+    
+
+    .login-container {
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 24px;
+      color: #333;
+    }
+
+    .login-container input[type="email"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 12px 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .login a {
+      width: 100%;
+      padding: 12px;
+      background-color:black;
+      color: rgb(200, 185, 25);
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .login a:hover {
+      background-color:white;
+      border: 2px solid black;
+      color: black;
+      text-decoration: underline;
+    }
+
+    .login-container .extra-links {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .login-container .links a {
+   
+      text-decoration: none;
+    }
+
+    .login-container .links a:hover {
+      text-decoration: underline;
+      color: rgb(62, 59, 59);
+    }
+  </style>
+</head>
+<body>
+     <header>
+        <div class="logo">
+            <h1>logo</h1>
+        </div>
+        <div class="icons">
+       <div class="nav">
+  <ul>
+    <li><a href="home.html">Home</a></li>
+    
+    <li class="dropdown">
+      <a href="allproducts.html">Products</a>
+      <ul class="dropdown-menu">
+        <li><a href="#"> Sports Shoes</a></li>
+        <li><a href="#">Kids</a></li>
+        <li><a href="#">Casuals</a></li>
+        <li><a href="#">Formal</a></li>
+      </ul>
+    </li>
+    
+    <li><a href="aboutus.html">About us</a></li>
+    <li><a href="contactus.html">Contact us</a></li>
+  </ul>
+</div>
+
+            <div class="p2">
+                <label>
+                    <input type="text">
+
+
+                    <button class="fa1" style="padding: 1px 6px;" ><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></button></label>
+
+                <button class="fa1" style="padding: 1px 6px;"><a href=""><i class="fa-solid fa-cart-plus"></i></a></button>
+            </div>
+        </div>
+        <div class="btnh">
+            <button class="btnh1"><a href="#">login</a></button>
+            <button class="btnh1" ><a href="signup.html">signup</a></button>
+        </div>
+    </header>
+    <div class="video"></div>
+    <div class="container">
+<center>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="email" id="email" placeholder="Email address" required />
+      <input type="password" id="password" placeholder="Password" required minlength="8" />
+      <button class="login" type="submit"><a href="home.html">Login</a></button>
+    </form>
+    <div class="links">
+      <p>Forgot password? <a href="#">Click here</a></p>
+      <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+    </div>
+  </div>
+  </center>
+  </div>
+   <footer>
+        <div class="fp1">
+            <div style="color: white; padding: 20px 10px;">
+                <h2>LOGO</h2>
+            </div>
+            <div style="color: white; padding: 20px 10px;">
+                <p>From casual strolls to bold adventures — find your perfect pair with us today</p>
+            </div>
+
+        </div>
+        <div class="fp2">
+            <div style="padding: 20px 10px ; color: white;">
+                <h3 align="center" style="margin-bottom: 10px;">OUR BRANCHES</h3>
+                <center>
+                    <p style="margin-bottom: 5px;">Ludhiana</p>
+                    <p style="margin-bottom: 5px;">jalandhar</p>
+                    <p style="margin-bottom: 5px;">Delhi</p>
+                    <p style="margin-bottom: 5px;">Chandigarh</p>
+                    <p style="margin-bottom: 5px;">Amritsar</p>
+                </center>
+
+            </div>
+        </div>
+        <div class="p3">
+            <div style="padding: 20px 10px ; color: white;">
+                <h3 align="center" style="margin-bottom: 10px;">OUR PRODUCTS</h3>
+                <center>
+                    <p style="margin-bottom: 5px;">Kids</p>
+                    <p style="margin-bottom: 5px;">Mens</p>
+                    <p style="margin-bottom: 5px;">Women</p>
+                    <p style="margin-bottom: 5px;">Sports</p>
+                    <p style="margin-bottom: 5px;">Formal</p>
+                </center>
+
+            </div>
+        </div>
+        <div class="p4">
+            <div style="padding: 20px 10px ; color: white;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108169.48892438375!2d75.86074295858695!3d30.922020077984158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a837462345a7d%3A0x681102348ec60610!2sLudhiana%2C%20Punjab!5e0!3m2!1sen!2sin!4v1750500565867!5m2!1sen!2sin"
+                    width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="social">
+                <center>
+                    <p style="color: white; margin-top: 10px ;">Social</p>
+                    <a href="">
+                        <p style=" margin-left: 10px;"><img src="./images/download-removebg-preview.png" height="30px"
+                                width="50px"></p>
+                        <p style="color: white;">Instagram</p>
+                    </a>
+                    <a href="">
+                        <p style="margin-left: 10px; margin-top: 5px;"><img
+                                src="./images/download-removebg-preview (1).png" height="30px" width="50px"></p>
+                        <p style="color: white;">Facebook</p>
+                    </a>
+                    <a href="">
+                        <p style="margin-left: 10px;"><img src="./images/images-removebg-preview.png" height="30px"
+                                width="50px"></p>
+                        <p style="color: white;">Youtube</p>
+                    </a>
+                </center>
+
+            </div>
+        </div>
+
+
+
+
+    </footer>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function() {
+    
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value.trim();
+
+      if (!email || !password) {
+        alert("Please fill in both fields.");
+       
+      }
+
+      if (password.length < 8) {
+        alert("Password must be at least 8 characters.");
+        
+      }
+      alert("Login successful!");
+    });
+  </script>
+
+</body>
+</html>

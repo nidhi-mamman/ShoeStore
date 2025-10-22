@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+<style>
+     .container {
+    
+      /* border: 2px solid #000; */
+      border-radius: 10px;
+      background-color: #fff;
+     
+      width: 100%;
+    }
+
+    .sidebar {
+      background-color: #f6efea;
+      padding: 20px;
+      width: 150px;
+      border-right: 1px solid #ddd;
+    }
+
+    .sidebar p {
+      margin: 20px 0;
+      color: #bbb;
+      cursor: pointer;
+    }
+
+    .sidebar p:first-child {
+      font-weight: bold;
+      color: #000;
+    }
+
+    .form-section {
+        width: 500px;
+      padding: 30px 50px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+   
+      margin:0px auto;
+    }
+
+    .form-section input[type="text"],
+    .form-section input[type="email"],
+    .form-section input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+
+    .password-rules {
+      font-size: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 10px 0;
+    }
+
+    .password-rules span {
+      color: red;
+      display: flex;
+      align-items: center;
+    }
+
+    .checkbox {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+    }
+
+    .checkbox input {
+      margin-right: 8px;
+    }
+
+    .submit-btn {
+      background-color: #f60;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .submit-btn:disabled {
+      background-color: #ccc;
+    }
+    #signupForm{
+        padding: 20px 0px;
+
+    }
+</style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>logo</h1>
+        </div>
+        <div class="icons">
+       <div class="nav">
+  <ul>
+    <li><a href="home.html">Home</a></li>
+    
+    <li class="dropdown">
+      <a href="allproducts.html">Products</a>
+      <ul class="dropdown-menu">
+        <li><a href="#"> Sports Shoes</a></li>
+        <li><a href="#">Kids</a></li>
+        <li><a href="#">Casuals</a></li>
+        <li><a href="#">Formal</a></li>
+      </ul>
+    </li>
+    
+    <li><a href="aboutus.html">About us</a></li>
+    <li><a href="contactus.html">Contact us</a></li>
+  </ul>
+</div>
+
+            <div class="p2">
+                <label>
+                    <input type="text">
+
+
+                    <button class="fa1" href=""><i class="fa-solid fa-magnifying-glass"></i></button></label>
+
+                <button class="fa1" href=""><i class="fa-solid fa-cart-plus"></i></button>
+            </div>
+        </div>
+        <div class="btnh">
+            <button class="btnh1"><a href="login.html">login</a></button>
+            <button class="btnh1"><a href="signup.html">signup</a></button>
+        </div>
+    </header>
+    <div class="video"></div>
+
+      <div class="container">
+   
+    <div class="form-section">
+        <h2>Signup</h2>
+
+      <form id="signupForm">
+        <input type="text" id="fname" placeholder="First name*" required>
+        <input type="text" id="lname" placeholder="Last name*" required>
+        <input type="email" id="email" placeholder="Email address*" required>
+        <input type="text" id="phone" placeholder="Phone number*" required>
+        <input type="password" id="password" placeholder="Create a password*" required>
+
+        <div class="password-rules" id="rules">
+          <span id="rule-length">➤ 8 characters minimum</span>
+          <span id="rule-lower">➤ One lowercase character</span>
+          <span id="rule-upper">➤ One uppercase character</span>
+          <span id="rule-number">➤ One number</span>
+        </div>
+
+        <div class="checkbox">
+          <input type="checkbox" id="tos">
+          <label for="tos">I accept the tbh <a href="#">terms of service</a></label>
+        </div>
+
+        <button href="" class="submit-btn" id="submitBtn" disabled>Get Started</button>
+      </form>
+    </div>
+  </div>
+
+ 
+
+    <footer>
+        <div class="fp1">
+            <div style="color: white; padding: 20px 10px;">
+                <h2>LOGO</h2>
+            </div>
+            <div style="color: white; padding: 20px 10px;">
+                <p>From casual strolls to bold adventures — find your perfect pair with us today</p>
+            </div>
+
+        </div>
+        <div class="fp2">
+            <div style="padding: 20px 10px ; color: white;">
+                <h3 align="center" style="margin-bottom: 10px;">OUR BRANCHES</h3>
+                <center>
+                    <p style="margin-bottom: 5px;">Ludhiana</p>
+                    <p style="margin-bottom: 5px;">jalandhar</p>
+                    <p style="margin-bottom: 5px;">Delhi</p>
+                    <p style="margin-bottom: 5px;">Chandigarh</p>
+                    <p style="margin-bottom: 5px;">Amritsar</p>
+                </center>
+
+            </div>
+        </div>
+        <div class="p3">
+            <div style="padding: 20px 10px ; color: white;">
+                <h3 align="center" style="margin-bottom: 10px;">OUR PRODUCTS</h3>
+                <center>
+                    <p style="margin-bottom: 5px;">Kids</p>
+                    <p style="margin-bottom: 5px;">Mens</p>
+                    <p style="margin-bottom: 5px;">Women</p>
+                    <p style="margin-bottom: 5px;">Sports</p>
+                    <p style="margin-bottom: 5px;">Formal</p>
+                </center>
+
+            </div>
+        </div>
+        <div class="p4">
+            <div style="padding: 20px 10px ; color: white;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108169.48892438375!2d75.86074295858695!3d30.922020077984158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a837462345a7d%3A0x681102348ec60610!2sLudhiana%2C%20Punjab!5e0!3m2!1sen!2sin!4v1750500565867!5m2!1sen!2sin"
+                    width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="social">
+                <center>
+                    <p style="color: white; margin-top: 10px ;">Social</p>
+                    <a href="">
+                        <p style=" margin-left: 10px;"><img src="./images/download-removebg-preview.png" height="30px"
+                                width="50px"></p>
+                        <p style="color: white;">Instagram</p>
+                    </a>
+                    <a href="">
+                        <p style="margin-left: 10px; margin-top: 5px;"><img
+                                src="./images/download-removebg-preview (1).png" height="30px" width="50px"></p>
+                        <p style="color: white;">Facebook</p>
+                    </a>
+                    <a href="">
+                        <p style="margin-left: 10px;"><img src="./images/images-removebg-preview.png" height="30px"
+                                width="50px"></p>
+                        <p style="color: white;">Youtube</p>
+                    </a>
+                </center>
+
+            </div>
+        </div>
+
+
+
+
+    </footer>
+
+
+
+
+     <script>
+    const passwordInput = document.getElementById('password');
+    const submitBtn = document.getElementById('submitBtn');
+    const tos = document.getElementById('tos');
+
+    const rules = {
+      length: document.getElementById('rule-length'),
+      lower: document.getElementById('rule-lower'),
+      upper: document.getElementById('rule-upper'),
+      number: document.getElementById('rule-number')
+    };
+
+    function validatePassword(pwd) {
+      const hasLength = pwd.length >= 8;
+      const hasLower = /[a-z]/.test(pwd);
+      const hasUpper = /[A-Z]/.test(pwd);
+      const hasNumber = /\d/.test(pwd);
+
+      rules.length.style.color = hasLength ? 'green' : 'red';
+      rules.lower.style.color = hasLower ? 'green' : 'red';
+      rules.upper.style.color = hasUpper ? 'green' : 'red';
+      rules.number.style.color = hasNumber ? 'green' : 'red';
+
+      rules.length.style.textDecoration = hasLength ? 'none' : 'linethrough';
+      rules.lower.style.textDecoration = hasLower ? 'none' : 'linethrough';
+      rules.upper.style.textDecoration = hasUpper ? 'none' : 'linethrough';
+      rules.number.style.textDecoration = hasNumber ? 'none' : 'linethrough';
+
+      return hasLength && hasLower && hasUpper && hasNumber;
+    }
+
+    passwordInput.addEventListener('input', () => {
+      const valid = validatePassword(passwordInput.value);
+      submitBtn.disabled = !(valid && tos.checked);
+    });
+
+    tos.addEventListener('change', () => {
+      submitBtn.disabled = !(validatePassword(passwordInput.value) && tos.checked);
+    });
+
+    document.getElementById('signupForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Form submitted successfully!');
+    });
+  </script>
+    
+</body>
+</html>

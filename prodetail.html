@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        .cimg {
+            overflow: hidden;
+        }
+
+        .cimg img {
+
+            transition: transform 0.4s ease;
+        }
+
+        .cimg img:hover {
+            transform: scale(1.2);
+        }
+
+        .hover-img {
+           
+            transition: 0.3s ease;
+        }
+
+        .hover-img:hover {
+            content: url("/images/bg2.avif");
+          
+        }
+
+
+
+        .collapsible {
+            border-bottom: 1px solid grey;
+            cursor: pointer;
+
+            width: 100%;
+            text-align: left;
+            border-left: 1px solid grey;
+            outline: none;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        text-align: justify;
+            
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>logo</h1>
+        </div>
+        <div class="icons">
+            <div class="nav">
+
+
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+
+                    <li class="dropdown">
+                        <a href="allproducts.html">Products</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"> Sports Shoes</a></li>
+                            <li><a href="#">Kids</a></li>
+                            <li><a href="#">Casuals</a></li>
+                            <li><a href="#">Formal</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="contactus.html">Contact us</a></li>
+                </ul>
+            </div>
+
+            <div class="p2">
+                <label>
+                    <input type="text">
+
+
+                    <button class="fa1" href=""><i class="fa-solid fa-magnifying-glass"></i></button></label>
+
+                <button class="fa1" href=""><i class="fa-solid fa-cart-plus"></i></button>
+            </div>
+        </div>
+        <div class="btnh">
+            <button class="btnh1"><a href="login.html">login</a></button>
+            <button class="btnh1"><a href="signup.html">signup</a></button>
+        </div>
+    </header>
+
+    <div class="video">
+
+    </div>
+
+    <div class="main">
+        <div class="img">
+            <div class="mimg">
+                <img class="hover-img" src="/images/pf.avif" height="300px" width="350px">
+            </div>
+            <div class="cimg"><img src="/images/p12.avif" height="100px" width="150px"> <img src="/images//p32.avif"
+                    height="100px" width="150px"><img></div>
+        </div>
+        <div class="details">
+
+            <h5 style="margin: 0px 0px 15px 0px;">Shoes</h5>
+            <h3 style="margin: 0px 0px 5px 0px;">Sustainable Strider</h3>
+            <p><i style="text-decoration: line-through;">Rs: 2499</i> &nbsp; Rs: 1999</p>
+            <p style="font-size: 13px; color:rgb(221, 156, 17) ; margin-top: 50px;"><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star-half"></i><span style="color: black; text-decoration: none;">(30)</span></p>
+            <p style="margin:20px 0px ;"> select color:</p>
+            <p><button
+                    style="height: 30px; width: 30px; background-color: black; border: 2px solid grey; margin-right: 2px;"></button><button
+                    style="height: 30px; width: 30px; background-color: rgb(191, 16, 16); border: 2px solid grey;  margin-right: 2px;"></button><button
+                    style="height: 30px; width: 30px; background-color: rgb(236, 224, 224); border: 2px solid grey;  margin-right: 2px;"></button><button
+                    style="height: 30px; width: 30px; background-color: rgb(80, 44, 177);  border: 2px solid grey;  margin-right: 2px;"></button>
+            </p>
+            <p style="margin:20px 0px ;"> select Size:</p>
+            <select
+                style="width: 200px;height: 30px; border-bottom: 1px solid black; border-left: 1px solid black; border-right: none; border-top:none ; border-radius: 5px;">
+                <option>size</option>
+                <option>37</option>
+                <option>38</option>
+                <option>39</option>
+                <option>40</option>
+                <option>41</option>
+            </select>
+            <br>
+            <br>
+            <button class="collapsible">Description</button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non esse iste incidunt eligendi fugiat
+                    aperiam sint vitae pariatur in soluta aut odit quaerat, magni repudiandae obcaecati iure inventore
+                    nobis! Animi harum neque, labore ipsam nam sit hic molestias eligendi velit nostrum obcaecati unde
+                    laudantium iusto temporibus tempora, ipsa impedit doloremque! Provident natus beatae quas autem
+                    magni unde iste facilis pariatur ipsum quaerat. Modi voluptatibus unde aut quasi excepturi quod
+                    eaque aspernatur eum sint sit blanditiis fugiat dolores tempora ut corrupti eius iusto facere vel,
+                    autem laboriosam earum aliquid cumque expedita minus? Sint doloremque iure quos in! Reiciendis
+                    officia impedit nihil.</p>
+            </div>
+
+         <a href="cart.html">   <button class="btnbg" >SHOP NOW</button></a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="fp1">
+            <div style="color: white; padding: 20px 10px;">
+                <h2>LOGO</h2>
+            </div>
+            <div style="color: white; padding: 20px 10px;">
+                <p>From casual strolls to bold adventures — find your perfect pair with us today</p>
+            </div>
+
+        </div>
+        <div class="fp2">
+            <div style="padding: 20px 10px ; color: white;">
+                <h3 align="center" style="margin-bottom: 10px;">OUR BRANCHES</h3>
+                <center>
+                    <p style="margin-bottom: 5px;">Ludhiana</p>
+                    <p style="margin-bottom: 5px;">jalandhar</p>
+                    <p style="margin-bottom: 5px;">Delhi</p>
+                    <p style="margin-bottom: 5px;">Chandigarh</p>
+                    <p style="margin-bottom: 5px;">Amritsar</p>
+                </center>
+
+            </div>
+        </div>
+        <div class="p3">
+            <div style="padding: 20px 10px ; color: white;">
+                <h3 align="center" style="margin-bottom: 10px;">OUR PRODUCTS</h3>
+                <center>
+                    <p style="margin-bottom: 5px;">Kids</p>
+                    <p style="margin-bottom: 5px;">Mens</p>
+                    <p style="margin-bottom: 5px;">Women</p>
+                    <p style="margin-bottom: 5px;">Sports</p>
+                    <p style="margin-bottom: 5px;">Formal</p>
+                </center>
+
+            </div>
+        </div>
+        <div class="p4">
+            <div style="padding: 20px 10px ; color: white;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108169.48892438375!2d75.86074295858695!3d30.922020077984158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a837462345a7d%3A0x681102348ec60610!2sLudhiana%2C%20Punjab!5e0!3m2!1sen!2sin!4v1750500565867!5m2!1sen!2sin"
+                    width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="social">
+                <center>
+                    <p style="color: white; margin-top: 10px ;">Social</p>
+                    <a href="">
+                        <p style=" margin-left: 10px;"><img src="./images/download-removebg-preview.png" height="30px"
+                                width="50px"></p>
+                        <p style="color: white;">Instagram</p>
+                    </a>
+                    <a href="">
+                        <p style="margin-left: 10px; margin-top: 5px;"><img
+                                src="./images/download-removebg-preview (1).png" height="30px" width="50px"></p>
+                        <p style="color: white;">Facebook</p>
+                    </a>
+                    <a href="">
+                        <p style="margin-left: 10px;"><img src="./images/images-removebg-preview.png" height="30px"
+                                width="50px"></p>
+                        <p style="color: white;">Youtube</p>
+                    </a>
+                </center>
+
+            </div>
+        </div>
+
+
+
+
+    </footer>
+
+    <script>
+        const coll = document.querySelector('.collapsible');
+        const content = document.querySelector('.content');
+
+        coll.addEventListener('click', function () {
+            this.classList.toggle('active');
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    </script>
+
+</body>
+
+</html>

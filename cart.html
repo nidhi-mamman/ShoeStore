@@ -15,18 +15,18 @@
         .inc{
             border: 1px solid black;
             height: 20px;
-            margin-right: 30px;
+           
             
             display: inline-block;
         }
         .dec{
             border: 1px solid black;
             height: 20px;
-            margin-left: 30px;
+          
             
             display: inline-block;
         }
-        p{
+      .inc  p{
             display: inline;
         }
         .action{
@@ -47,6 +47,9 @@
                 padding: 0px;
                 overflow-x: scroll;
             }
+        }
+        span{
+            text-decoration: none;
         }
     </style>
   
@@ -99,55 +102,76 @@
 
         <h1>Cart </h1>
 
-            <table border="2px" >
-                <tr>
-                    <th>S.no.</th>
-                    <th>Product</th>
-                    <th> Name</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    <th>Action</th>
-                </tr>
-                <tr>
-                    <td>1.</td>
+            <table border="2px">
+    <tr>
+        <th>S.no.</th>
+        <th>Product</th>
+        <th>Name</th>
+        <th>Price (each)</th>
+        <th>Quantity</th>
+   
+        <th>Action</th>
+    </tr>
+    <tr>
+        <td>1.</td>
+        <td><img src="/images/p22.avif" height="100" width="150"></td>
+        <td>Shoes White</td>
+        <td class="price">1500</td>
+        <td>
+            <button class="dec">-</button>
+            <span class="quantity">1</span>
+            <button class="inc">+</button>
+        </td>
+ 
+        <td><button class="delete">X</button></td>
+    </tr>
+    <tr>
+        <td>2.</td>
+        <td><img src="/images/p22.avif" height="100" width="150"></td>
+        <td>Shoes White</td>
+        <td class="price">1500</td>
+        <td>
+            <button class="dec">-</button>
+            <span class="quantity">1</span>
+            <button class="inc">+</button>
+        </td>
+       
+        <td><button class="delete">X</button></td>
+    </tr>
+    <tr>
+        <td>3.</td>
+        <td><img src="/images/p22.avif" height="100" width="150"></td>
+        <td>Shoes White</td>
+        <td class="price">1500</td>
+        <td>
+            <button class="dec">-</button>
+            <span class="quantity">1</span>
+            <button class="inc">+</button>
+        </td>
+     
+        <td><button class="delete">X</button></td>
+    </tr>
+     <tr>
+                    <td>4.</td>
                     <td><img src="/images/p22.avif" height="100" width="150"></td>
                     <td> Shoes white</td>
-                    <td>1500</td>
-                    <td><button class="inc">-</button><p>1</p><button class="dec">+</button></td>
-                    <td><button class="action">X</button></td>
-                </tr>
-                <tr>
-                    <td>2.</td>
-                    <td><img src="/images/p22.avif" height="100" width="150"></td>
-                    <td> Shoes white</td>
-                    <td>1500</td>
-                    <td><button class="inc">-</button><p>1</p><button class="dec">+</button></td>
-                    <td><button class="action">X</button></td>
-                </tr>
-                <tr>
-                    <td>3.</td>
-                    <td><img src="/images/p22.avif" height="100" width="150"></td>
-                    <td> Shoes white</td>
-                    <td>1500</td>
-                    <td><button class="inc">-</button><p>1</p><button class="dec">+</button></td>
+                    <td class="price">1500</td>
+                    <td><button class="dec">-</button>  <span class="quantity">1</span><button class="inc">+</button></td>
                     <td><button class="action">X</button></td>
                 </tr>
                 <tr>
                     <td></td>
                     <td></td>
-                     <td>Product</td>
+                   
                       <td>Total:</td>
-                    <td></td>
+                    <td class="total">6000</td>
+                    <td>
                    
                    
                     <td></td>
                    
                 </tr>
-              
-
-
-
-            </table>
+</table>
 
 
     </div>
@@ -225,6 +249,75 @@
     </footer>
 
 
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+   
+    const updateGrandTotal = () => {
+        let total = 0;
+        document.querySelectorAll('table tr').forEach(row => {
+            const priceEl = row.querySelector('.price');
+            const qtyEl = row.querySelector('.quantity');
+            if (priceEl && qtyEl) {
+                const unitPrice = parseInt(priceEl.dataset.unitprice);
+                const qty = parseInt(qtyEl.textContent);
+                const subtotal = unitPrice * qty;
+                priceEl.textContent = subtotal; 
+                total += subtotal;
+            }
+        });
+        const totalCell = document.querySelector('.total');
+        if (totalCell) totalCell.textContent = total;
+    };
+
+   
+    document.querySelectorAll('table tr').forEach(row => {
+        const incBtn = row.querySelector('.inc');
+        const decBtn = row.querySelector('.dec');
+        const delBtn = row.querySelector('.delete') || row.querySelector('.action');
+        const qtyEl = row.querySelector('.quantity');
+        const priceEl = row.querySelector('.price');
+
+        if (!priceEl || !qtyEl) return;
+
+        if (!priceEl.dataset.unitprice) {
+            priceEl.dataset.unitprice = priceEl.textContent.trim();
+        }
+
+    
+        incBtn?.addEventListener('click', () => {
+            let qty = parseInt(qtyEl.textContent);
+            if (qty < 5) {
+                qty++;
+                qtyEl.textContent = qty;
+                updateGrandTotal();
+            } else {
+                alert("Maximum quantity is 5");
+            }
+        });
+
+
+        decBtn?.addEventListener('click', () => {
+            let qty = parseInt(qtyEl.textContent);
+            if (qty > 1) {
+                qty--;
+                qtyEl.textContent = qty;
+                updateGrandTotal();
+            } else {
+                alert("Minimum quantity is 1");
+            }
+        });
+
+  
+        delBtn?.addEventListener('click', () => {
+            row.remove();
+            updateGrandTotal();
+        });
+    });
+
+   
+    updateGrandTotal();
+});
+</script>
 
     
     

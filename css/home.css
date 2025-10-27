@@ -7,7 +7,7 @@
 
 header{
     height: 80px;
-    width: 100%;
+   width: 100%;
     display: flex;
     padding: 20px 0px;
     background-color: rgba(255, 255, 255, 0.2);
@@ -19,6 +19,105 @@ header{
 }
 .nav ul li {
   position: relative;
+}
+
+@media(max-width:760px){
+    .icons{
+        display: none  !important;
+    }
+    header{
+        justify-content: space-between;
+    }
+    .bsp{
+        flex-direction: column;
+        align-items: center;
+    }
+    .bspc{
+        flex-direction: column;
+        align-items: center;
+    }
+    .pro{
+        left: 0px !important;
+        width: 450px !important;
+    }
+    .pro2{
+        left: 0px !important;
+    }
+    .reviewm{
+ margin-left:0px !important ;
+    }
+    .container{
+        margin: 0px !important;
+    }
+    .nletter{
+        left: 0px !important;
+         width: 450px !important;
+    }
+    .nletter p{
+        margin: 0px !important;
+       
+       
+    }
+    footer{
+        flex-direction:column !important;
+        align-items: center;
+        gap: 20px;
+    }
+    .arrow{
+        display: none !important;
+    }
+    .reviewc{
+        flex-direction: column;
+        width: 400px !important;
+        gap: 10px;
+        align-items: center ;
+    }
+    .reviewm{
+        width: 450px !important;
+    }
+    .allpro1{
+        flex-direction: column !important;
+    }
+    .containerp{
+        gap: 20px !important;
+    }
+    .shoe{
+        height: 150px !important;
+        width: 200px !important;
+        background-size: 200px 150px !important;
+        top: 300px !important;
+        right: -10px !important;
+    }
+.border{
+padding: 0px !important; 
+left: 0px !important;}
+
+.containerab{
+    flex-direction: column;
+    padding: 50px!important;
+}
+.imgab{
+    width: 400px !important;
+}
+.about{
+    width: 400px !important;
+}
+.featureab{
+    flex-wrap: wrap !important;
+}
+.team{
+    flex-direction: column !important;
+    align-items: center !important;
+}
+.main{
+    flex-direction: column;
+}
+.img{
+    position: static !important;
+}
+.details{
+    align-items: center;
+}
 }
 
 
@@ -62,9 +161,9 @@ h1{
     transition: all 0.3s ease;
     
 }
-a{
-    text-decoration: none;
-    color: black;
+.nav a,.btnh a{
+    text-decoration: none !important;
+    color: black !important;
 }
 
 .icons {
@@ -78,9 +177,7 @@ a{
     width: 55%;
     
 }
-input:focus{
-    border: 5px solid rgb(255, 0, 0);
-}
+
 
 button{
     background-color: rgba(255, 255, 255, 0);
@@ -92,6 +189,7 @@ button{
     width: 100px;
     height: 25px;
     border-radius: 20px;
+    font-size: 15px;
 }
 .bg{
   height: 800px;
@@ -113,16 +211,17 @@ button{
     font-size: 30px;
     display: inline-block;
     overflow: hidden;
-  height:80px ;
-    width: 600px ;
+  
+    width: 400px ;
    left: 50px;
     position: absolute;
     top: 100px;
    
 }
 #ani{
-     animation: erase 2s steps(15)  infinite alternate;
+     animation: erase 2s steps(15)  infinite alternate ;
     border-right: 2px solid black;
+    height: 45px;
 
 }
 @keyframes erase{
@@ -130,7 +229,7 @@ button{
         width: 0;
     }
     to{
-        with:20ch
+        with:20ch 
     }
 }
 
@@ -138,7 +237,7 @@ button{
 .txt1{
    
   
-    width: 600px;
+  
     left: 50px;
     position: absolute;
     top: 200px;
@@ -192,13 +291,14 @@ span{
     margin-left: 5px;
 }
 .abtn{
-    margin-top: 40px;
+    margin-top: 16px;
 }
 .abutn{
     width: 100px;
     border: 1px solid black;
     border-radius: 15px;
     height: 40px;
+    font-size: 13px;
 }
 .container{
     padding: 0px 20px;
@@ -215,8 +315,6 @@ span{
     margin-top: 50px;
 }
 .bsp{
-    height: 500px;
-    width: 100%;
     display: flex;
 
     gap: 17px;
@@ -304,7 +402,7 @@ span{
 .txt2{
    
   
-    width: 600px;
+   
     left: 50px;
     position: absolute;
     top: 240px;
@@ -313,7 +411,7 @@ span{
     position: absolute;
     height: 50px;
     background-color: black;
-    color: white;
+    
     padding: 15px 0px;
     top: 750px;
 }
@@ -322,10 +420,9 @@ span{
     margin-right: 10px;
 }
 .bspc{
-    height: 450px;
-    width: 100%;
+   margin-bottom: 20px;
     display: flex;
-
+ 
     gap: 17px;
 
 }
@@ -377,7 +474,7 @@ span{
     width: 140px;
     height: 25px;
     border-radius: 20px;
-    font-size: 10px;
+    font-size: 13px;
     padding: 0px;
 }
 .bg3{
@@ -417,7 +514,10 @@ span{
     border: 1px solid white;
     color: white;
     border-radius: 20px;
-    font-size: 10px;
+   
+}
+.btnrm h3{
+     font-size: 13px;
 }
 
 .reviewm {
@@ -482,8 +582,7 @@ span{
     padding: 30px 20px;
 }
 footer{
-    height: 300px;
-    width: 100%;
+    
     background-color: black;
     display: flex;
     gap: 10px   ;
@@ -492,28 +591,28 @@ footer{
 }
 
 .fp1{
-    height: 250px;
+   
     width: 25%;
    
 }
 .fp2{
-    height: 250px;
+ 
     width: 25%;
    
 }
 .p3{
-    height: 250px;
+
     width: 25%;
  
 }
 .p4{
-    height: 250px;
-    width: 25%;
+   
+ 
     display: flex;
 }
 .social{
     width: 80px;
-    height: 250px;
+ 
     padding: 10px 0px;
 }
 
@@ -566,7 +665,7 @@ i:hover{
 }
 .containerp{
     position: relative;
-    height: 1500px;
+  
     display: flex;
     justify-content: center;
 }
@@ -579,7 +678,7 @@ position:sticky;
 }
 .pmain{
    
-    height: 1200px;
+  
     
     /* background-color: blue; */
     width: 100%;
@@ -587,7 +686,7 @@ position:sticky;
 }
 .amain{
    
-    height: 1200px;
+
     padding: 0px 50px;
     
     background-color: #f8f9fa;
@@ -635,7 +734,7 @@ position:sticky;
     font-size: 12px;
 }
 .allpro1{
-    height: 450px;
+    margin-bottom: 10px;
     width: 100%;
     /* background-color: aqua; */
     display: flex;
@@ -725,7 +824,7 @@ position:sticky;
     width: 400px;
 }
 .containerab{
-    height: 600px;
+  
     width: 100%;
     display: flex;
     padding: 50px 150px;
@@ -740,7 +839,7 @@ position:sticky;
     background-size: 100% 500px;
 }
 .about{
-    height: 500px;
+  
     width:50% ;
    
     border-radius: 50px;
@@ -769,8 +868,8 @@ box-shadow: 0px 0px 50px gray;
     font-family:'Exo 2',sans-serif;
 }
 .featureab{
-    height: 450px;
-    width: 100%;
+  
+
     padding: 50px 100px;
     display: flex;
     gap: 30px;
@@ -818,16 +917,17 @@ box-shadow: 0px 0px 50px gray;
     padding: 20px 20px;
 }
 .partners{
-height: 200px;
+
 width: 100%;
 background-color: black;
 padding-top: 20px;
 padding-left: 100px;
 padding-right: 100px;
+padding-bottom: 20px;
 
 }
 .teamh{
-    height: 150px;
+    
     width: 100%;
       background-color: #f0f0f0;
    
@@ -839,12 +939,12 @@ padding-right: 100px;
     font-family:'Exo 2',sans-serif;
 }
 .team{
-    height: 400px;
+ 
     width: 100%;
     background-color: #f0f0f0;
     display: flex;
     justify-content: center;
-    padding: 50px;
+padding: 50px 0px;
     gap: 50px;
 }
 .partnerh{
@@ -854,7 +954,8 @@ padding-right: 100px;
      
 }
 
-.ptm{ height: 300px;
+.ptm{ 
+  
     width: 100%;
     display: flex;
     justify-content: center;
@@ -865,7 +966,7 @@ padding-right: 100px;
 }
 
 .pt{
-    width: 100px;
+   
     height: 60px;
    
     align-items: center;
@@ -908,7 +1009,7 @@ padding-right: 100px;
 
  .card {
       width: 300px;
-      height: 200px;
+      height: 300px;
       position: relative;
       transform-style: preserve-3d;
       transition: transform 0.8s;
@@ -1014,7 +1115,7 @@ padding-right: 100px;
   }
 
   .main{
-    height:800px;
+
     width: 100%;
     /* background-color: #b61111; */
     display: flex;
@@ -1029,6 +1130,8 @@ padding-right: 100px;
     top: 0px;
 }
 .details{
+    display: flex;
+    flex-direction: column;
     height: 800px;
     width: 100%;
    padding: 30px 0px;
@@ -1082,7 +1185,7 @@ width: 350px;
 
 }
 .route{
-    height: 50px;
+ 
     width: 120px;
     margin-left: 50px;
   
